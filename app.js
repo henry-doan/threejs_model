@@ -13,11 +13,10 @@ function init() {
   controls = new THREE.OrbitControls(cam)
   controls.addEventListener('change', renderer)
 
-
-  hlight = new THREE.AmbientLight (0x404040, 7);
+  hlight = new THREE.AmbientLight(0x404040, 5);
   scene.add(hlight);
 
-  dirLight = new THREE.DirectionalLight(0xffffff, 1);
+  dirLight = new THREE.DirectionalLight(0xF7B1FF, 1);
   dirLight.position.set(0, 1, 0)
   dirLight.castShadow = true
   scene.add(dirLight)
